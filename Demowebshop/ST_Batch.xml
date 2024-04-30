@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="ST.TC_013_ChangePass_Test"/>
+      <class name="ST.TC_015_UpdateAddress_Test"/>
+      <class name="ST.TC_016_AddNewAddress_Test"/>
+      <class name="ST.TC_014_UpdateProfile_Test"/>
+      <class name="ST.TC_017_OrderList_Test"/>
+      <class name="ST.TC_018_OrderPlace_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
