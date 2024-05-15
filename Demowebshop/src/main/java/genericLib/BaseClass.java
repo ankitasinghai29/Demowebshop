@@ -8,14 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 import pom.LoginPage;
 
@@ -33,7 +31,7 @@ public class BaseClass {
 		Reporter.log("D/B Connection start", true);
     }
 	
-	@BeforeTest
+	@BeforeClass
 	public void browserSetUp() throws Throwable
 	{
 		String browser = uc.readDataFromPropFile(Constants.propFilePath, "browser");
@@ -100,7 +98,7 @@ public class BaseClass {
 		Reporter.log("User is able to logout",true);
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void tearDownBrowser()
 	{
 		driver.quit();

@@ -4,14 +4,14 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
-<td>IT.TC_007_CartItem_Test</td>
+<td>FT.TC_002_Login_Test</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>valiadteThatUserIsAbleToAddItemInCart</td>
+<td>validateThatUserIsAbleToLogin</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -20,81 +20,13 @@
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>userLogin</td>
-<td>&nbsp;</td></tr>
-<tr>
 <td align='center' colspan='3'>@AfterMethod</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>userLogout</td>
-<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>IT.TC_011_RemoveFilter_Test</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>valiadteThatUserIsAbleToGetUnFilteredPage</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>userLogin</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>userLogout</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>IT.TC_012_Account_Test</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>valiadteThatUserIsAbleToGetAccountByEmail</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>userLogin</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>userLogout</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>IT.TC_009_SearchedItem_Test</td>
+<td>FT.TC_005_Search_Test</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
@@ -107,6 +39,10 @@
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
 <tr>
+<td>&nbsp;</td>
+<td>browserSetUp</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
 <tr>
@@ -124,14 +60,56 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>IT.TC_010_FilterProduct_Test</td>
+<td>&nbsp;</td>
+<td>tearDownBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>FT.TC_006_EmailFrd_Test</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>valiadteThatUserIsAbleToGetFilteredItem</td>
+<td>valiadteThatUserIsAbleToSendMail</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>browserSetUp</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>userLogin</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>userLogout</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>tearDownBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>FT.TC_001_Register_Test</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>validateThatUserIsAbleToRegister</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -140,32 +118,28 @@
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>userLogin</td>
-<td>&nbsp;</td></tr>
-<tr>
 <td align='center' colspan='3'>@AfterMethod</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>userLogout</td>
-<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>IT.TC_008_ItemInSort_Test</td>
+<td>FT.TC_004_Cart_Test</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>validateUserIsAbleToSortTheProducts</td>
+<td>validateThatUserIsAbleToClickOnWishlist</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>browserSetUp</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
@@ -183,4 +157,46 @@
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>tearDownBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>FT.TC_003_BookItem_Test</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>valiadteThatUserIsAbleToGetBookItem</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>browserSetUp</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>userLogin</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>userLogout</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>tearDownBrowser</td>
+<td>&nbsp;</td></tr>
 </table>
